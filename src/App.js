@@ -62,18 +62,37 @@ let drumKey = [
 class App extends React.Component {
     constructor(props){
         super(props)
+        this.state = {
+            display: '',
+        }
+        this.handleDisplay = this.handleDisplay.bind(this);
     }
+    
+    handleDisplay(display){
+        this.setState({
+            display: display
+        })
+    }
+
     render(){
         return (
-            <div id="drum-machine" className="App">
-                <div id="display"></div>
-                {drumKey.map(d => (
-                    <DrumPad 
-                        id={d.id}
-                        keyTrigger={d.keyTrigger}
-                        url={d.url}
-                    />
-                ))}
+            <div className="App">
+                <div id="drum-machine">
+                        <div className="container-pad">
+                            {drumKey.map(d => (
+                                <DrumPad 
+                                    id={d.id}
+                                    keyTrigger={d.keyTrigger}
+                                    keyCode = {d.keyCode}
+                                    url={d.url}
+                                    onClick={this.handleClick}
+                                    onKeyDown={this.triggerKeyPress}
+                                    handleDisplay={this.handleDisplay}
+                                />
+                            ))}
+                        </div>
+                        <div id="display">{this.state.display}</div>
+                </div>
             </div>
         );
     }
