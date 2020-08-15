@@ -5,6 +5,7 @@ html, body, #root, .App {
   height: 100%;
   width: 100%;
   text-align: center;
+  background-color: #ffb766;
 }
 
 #drum-machine{
@@ -13,17 +14,25 @@ html, body, #root, .App {
 }
 
 #display {
- width:  100px;
+ margin-left: 20px;
+ width:  230px;
  height: 100px;
  text-align: center;
  line-height: 100px;
+ font-family: 'Fredoka One', cursive;
+ font-size:  2em;
+ background-color:  #FF8F6B;
+ border-radius: 100px;
+ color: brown;
+ /*box-shadow: inset 4px -4px 5px 2px #DE7B5D, inset -3px 3px 6px 2px #FFA56B;*/
+ box-shadow: inset -4px -4px 4px 2px #DE7B5D, inset 3px 3px 6px 2px #FFA56B;
 }
 
 
 .container-pad {
-  height: 300px;
+  height: 305px;
   width: 400px;
-  background-color: #59748f; 
+  background-color: #2488B3; 
   margin: auto;
   display: inline-flex;
   flex-wrap: wrap;
@@ -31,20 +40,22 @@ html, body, #root, .App {
   padding:  10px;
   border-radius: 20px;
   box-shadow: 6px 6px 8px #111;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 600;
 }
 
 .drum-pad {
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin:  5px;
   flex: 0 0 120px;
-  background-color: #FFF;
-  line-height: 1.5em;
-  box-shadow: 2.5px 2.5px 1px #CCC;
+  background-color: #47DEB8;
+  line-height: 1.6em;
+  box-shadow: 3px 3px 1px #3DBF9F;
   border-radius: 10px;
 }
 
 .drum-pad:active{
-  box-shadow: inset 3px 3px 2px #C1C1C1;
-  background-color: #EEEEEE;
+  box-shadow: inset 3px 3px 2px #BD5E3E;
+  background-color: #E06D48;
   outline: none;
 }

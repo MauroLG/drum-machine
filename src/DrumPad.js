@@ -30,8 +30,8 @@ class DrumPad extends React.Component {
 			this.audio.currentTime = 0
 			this.props.handleDisplay(this.props.id)
 			this.setState({
-				backgroundBtn: '#EEEEEE',
-				boxShadowBtn: 'inset 3px 3px 2px #C1C1C1',
+				backgroundBtn: '#E06D48',
+				boxShadowBtn: 'inset 3px 3px 2px #BD5E3E',
 				outlineBtn: 'none'
 			})
 		}
