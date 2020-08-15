@@ -6,17 +6,16 @@ html, body, #root, .App {
   width: 100%;
   text-align: center;
   background-color: #ffb766;
+
 }
 
 .title {
   width:  100%;
   position:  absolute;
-  top: 10%;
+  top: 5%;
   font-size: 2em;
   font-family: 'Fredoka One', cursive;
   font-weight: 100;
-  display: block;
-  min-height: 3em;
 }
 
 #drum-machine{
