@@ -8,6 +8,17 @@ html, body, #root, .App {
   background-color: #ffb766;
 }
 
+.title {
+  width:  100%;
+  position:  absolute;
+  top: 10%;
+  font-size: 2em;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 100;
+  display: block;
+  min-height: 3em;
+}
+
 #drum-machine{
   display: flex;
   align-items:  center;
@@ -23,7 +34,7 @@ html, body, #root, .App {
  font-size:  2em;
  background-color:  #FF8F6B;
  border-radius: 100px;
- color: brown;
+ color: #000;
  /*box-shadow: inset 4px -4px 5px 2px #DE7B5D, inset -3px 3px 6px 2px #FFA56B;*/
  box-shadow: inset -4px -4px 4px 2px #DE7B5D, inset 3px 3px 6px 2px #FFA56B;
 }

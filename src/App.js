@@ -77,6 +77,7 @@ class App extends React.Component {
     render(){
         return (
             <div className="App">
+            <div className="title"><h1>DRUM MACHINE</h1></div>
                 <div id="drum-machine">
                         <div className="container-pad">
                             {drumKey.map(d => (
