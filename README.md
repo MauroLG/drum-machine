@@ -1,3 +1,13 @@
+# FreeCodeCamp Drum Machine Project
+
+This project is part of the FeeCodeCamp Front-End certification curriculum.
+
+I have chosen **react** to carry out this project to be able to practice the basic knowledge I have about this library.
+
+I have completed the first stage of the project by passing all the test requested by FCC.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
